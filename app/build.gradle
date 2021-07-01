@@ -23,6 +23,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
 }
 //JetPack start 
 def roomVersion = '2.1.0-rc01'
@@ -41,14 +49,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
-
-    implementation "android.arch.lifecycle:extensions:$lifeCycleExtensionVersion"
-    implementation "androidx.room:room-runtime:$roomVersion"
-    kapt "androidx.room:room-compiler:$roomVersion"
-    implementation "androidx.room:room-ktx:$roomVersion"
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.1.1"
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
-
 
     implementation "androidx.lifecycle:lifecycle-extensions:$lifeCycleExtensionVersion"
     kapt "androidx.lifecycle:lifecycle-compiler:$lifeCycleExtensionVersion"
