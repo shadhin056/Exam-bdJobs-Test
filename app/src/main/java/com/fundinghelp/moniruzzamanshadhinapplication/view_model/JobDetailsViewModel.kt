@@ -15,19 +15,19 @@ class SelfOnViewModel : ViewModel() {
     private val apiService = ApiService()
     private val disposable = CompositeDisposable()
 
-    var reqForOTPResponse = MutableLiveData<ApiResponse>();
+    var jobsResponse = MutableLiveData<ApiResponse>();
     var response_error = MutableLiveData<Boolean>();
 
-    fun reqForOtp() {
+    fun reqForJobs() {
 
         disposable.add(
-            apiService.reqForMobileOtp()
+            apiService.reqForJobs()
                 .subscribeOn(Schedulers.newThread())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribeWith(object : DisposableSingleObserver<ApiResponse>() {
                     override fun onSuccess(model: ApiResponse) {
                         model?.let {
-                            reqForOTPResponse.value = model
+                            jobsResponse.value = model
                         }
 
                     }

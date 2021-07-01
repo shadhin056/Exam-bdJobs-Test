@@ -34,8 +34,8 @@ class ApiService {
         .build()
         .create(Api::class.java);
 
-    fun reqForMobileOtp(): Single<ApiResponse> {
-        return api.requestForOtp(
+    fun reqForJobs(): Single<ApiResponse> {
+        return api.requestForJobs(
         )
     }
 }

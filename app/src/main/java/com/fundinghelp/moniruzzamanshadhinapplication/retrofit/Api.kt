@@ -6,10 +6,8 @@ import retrofit2.http.GET
 
 
 interface Api {
-
     //API END POINT
     @GET("InterviewJson.json")
-    fun requestForOtp(
+    fun requestForJobs(
     ): Single<ApiResponse>
-
 }
