@@ -28,130 +28,227 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:weightSum="2">
+                 >
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+
                     android:orientation="vertical">
-
-                    <TextView
-                        android:text="Job Title"
-                        android:id="@+id/txtJobTitle"
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:weightSum="2"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"></TextView>
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight="1"
+                            android:text="Company Name"
+                            android:id="@+id/txtJobCompany"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
 
-                    <TextView
-                        android:text="Deadline"
-                        android:id="@+id/txtJobDeadline"
+                        </TextView>
+                        <TextView
+                            android:layout_weight="1"
+                            android:textAlignment="textEnd"
+                            android:id="@+id/txtJobCompanyValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:weightSum="2"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"></TextView>
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight="1"
+                            android:text="Job Title"
+                            android:id="@+id/txtJobTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
 
-                    <TextView
-                        android:text="RecruitingCompanyProfile"
-                        android:id="@+id/txtJobRecruitingCompanyProfile"
+                        </TextView>
+                        <TextView
+                            android:layout_weight="1"
+                            android:textAlignment="textEnd"
+                            android:id="@+id/txtJobTitleValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:weightSum="2"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"></TextView>
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight="1"
+                            android:text="Deadline"
+                            android:id="@+id/txtJobDeadline"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></TextView>
+                        <TextView
+                            android:layout_weight="1"
+                            android:textAlignment="textEnd"
+                            android:id="@+id/txtJobDeadlineValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></TextView>
+                    </LinearLayout>
 
-                    <TextView
-                        android:text="IsFeatured"
-                        android:id="@+id/txtJobIsFeatured"
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:weightSum="2"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"></TextView>
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight="1"
+                            android:text="RecruitingCompanyProfile"
+                            android:id="@+id/txtJobRecruitingCompanyProfile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></TextView>
 
-                    <TextView
-                        android:text="Min Experience"
-                        android:id="@+id/txtMinExperience"
+                        <TextView
+                            android:layout_weight="1"
+                            android:textAlignment="textEnd"
+                            android:id="@+id/txtJobRecruitingCompanyProfileValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"></TextView>
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight="1"
+                            android:text="IsFeatured"
+                            android:id="@+id/txtJobIsFeatured"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></TextView>
+                        <TextView
+                            android:layout_weight="1"
+                            android:textAlignment="textEnd"
+                            android:id="@+id/txtJobIsFeaturedValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></TextView>
+                    </LinearLayout>
 
-                    <TextView
-                        android:text="Max Experience"
-                        android:id="@+id/txtmaxExperience"
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:weightSum="2"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"></TextView>
-
-                    <TextView
-                        android:text="Min Salary"
-                        android:id="@+id/txtMinSalary"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight="1"
+                            android:text="Min Experience"
+                            android:id="@+id/txtMinExperience"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></TextView>
+                        <TextView
+                            android:layout_weight="1"
+                            android:textAlignment="textEnd"
+                            android:id="@+id/txtMinExperienceValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:weightSum="2"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"></TextView>
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight="1"
+                            android:text="Max Experience"
+                            android:id="@+id/txtmaxExperience"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></TextView>
+                        <TextView
+                            android:layout_weight="1"
+                            android:textAlignment="textEnd"
+                            android:id="@+id/txtmaxExperienceValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></TextView>
+                    </LinearLayout>
 
-                    <TextView
-                        android:text="Max Salary"
-                        android:id="@+id/txtMaxSalary"
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:weightSum="2"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"></TextView>
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight="1"
+                            android:text="Min Salary"
+                            android:id="@+id/txtMinSalary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></TextView>
+                        <TextView
+                            android:layout_weight="1"
+                            android:textAlignment="textEnd"
+                            android:id="@+id/txtMinSalaryValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></TextView>
+                    </LinearLayout>
 
-                    <TextView
-                        android:text="Last Date"
-                        android:id="@+id/txtLastDate"
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:weightSum="2"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"></TextView>
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight="1"
+                            android:text="Max Salary"
+                            android:id="@+id/txtMaxSalary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></TextView>
+                        <TextView
+                            android:layout_weight="1"
+                            android:textAlignment="textEnd"
+                            android:id="@+id/txtMaxSalaryValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></TextView>
+                    </LinearLayout>
 
-                    <TextView
-                        android:text="Apply Instruction"
-                        android:id="@+id/txtApplyInstruction"
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:weightSum="2"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"></TextView>
-                </LinearLayout>
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight="1"
+                            android:text="Last Date"
+                            android:id="@+id/txtLastDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></TextView>
+                        <TextView
+                            android:layout_weight="1"
+                            android:textAlignment="textEnd"
+                            android:id="@+id/txtLastDateValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></TextView>
+                    </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/txtJobTitleValue"
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:weightSum="2"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"></TextView>
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight="1"
+                            android:text="Apply Instruction"
+                            android:id="@+id/txtApplyInstruction"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></TextView>
+                        <TextView
+                            android:layout_weight="1"
+                            android:textAlignment="textEnd"
+                            android:id="@+id/txtApplyInstructionValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></TextView>
+                    </LinearLayout>
 
-                    <TextView
-                        android:id="@+id/txtJobDeadlineValue"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"></TextView>
 
-                    <TextView
-                        android:id="@+id/txtJobRecruitingCompanyProfileValue"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"></TextView>
-
-                    <TextView
-                        android:id="@+id/txtJobIsFeaturedValue"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"></TextView>
-
-                    <TextView
-                        android:id="@+id/txtMinExperienceValue"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"></TextView>
-
-                    <TextView
-                        android:id="@+id/txtmaxExperienceValue"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"></TextView>
-
-                    <TextView
-                        android:id="@+id/txtMinSalaryValue"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"></TextView>
-
-                    <TextView
-                        android:id="@+id/txtMaxSalaryValue"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"></TextView>
-
-                    <TextView
-                        android:id="@+id/txtLastDateValue"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"></TextView>
-
-                    <TextView
-                        android:id="@+id/txtApplyInstructionValue"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
             </LinearLayout>
 
